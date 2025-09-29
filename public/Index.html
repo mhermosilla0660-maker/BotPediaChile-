@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🤖 BotPedia Chile – Chat Educativo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    h1 {
+      margin: 0.5rem 0;
+      color: #58a6ff;
+    }
+
+    #chat {
+      width: 100%;
+      max-width: 600px;
+      height: 60vh;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      background-color: #161b22;
+      padding: 1rem;
+      overflow-y: auto;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      line-height: 1.4;
+    }
+
+    #input-area {
+      display: flex;
+      width: 100%;
+      max-width: 600px;
+      gap: 0.5rem;
+    }
+
+    input {
+      flex: 1;
+      padding: 0.6rem;
+      border-radius: 6px;
+      border: 1px solid #30363d;
+      background: #0d1117;
+      color: #ffffff;
+    }
+
+    button {
+      background-color: #238636;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 0.6rem 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background-color: #2ea043;
+    }
+  </style>
+</head>
+<body>
+  <h1>🤖 BotPedia Chile</h1>
+  <p>Prebriefing y práctica guiada en pediatría intrahospitalaria (no urgencias ni UPC).  
+    Responde en español chileno, con enfoque educativo.</p>
+
+  <div id="chat"></div>
+
+  <div id="input-area">
+    <input id="mensaje" type="text" placeholder="Escribe tu caso clínico..." />
+    <button id="enviar">Enviar</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
